@@ -22,6 +22,16 @@ In 1930, Clyde Tombaugh found Pluto by flicking between two photographic plates 
 
 **Eskai puts Tombaugh's method in anyone's hands**, with real 2026 data, and is always clear about what that data can and cannot show.
 
+## Eskai's standout features
+
+<div align="center">
+
+<a href="https://youtu.be/8nY9VFGeb5M"><img src="https://img.youtube.com/vi/8nY9VFGeb5M/maxresdefault.jpg" alt="Thumbnail of the YouTube clip showing Eskai's standout features. Click to watch." width="600"></a>
+
+<sub>Click the image to watch Eskai's most striking features in action on YouTube.</sub>
+
+</div>
+
 ## What you can do
 
 | | |
