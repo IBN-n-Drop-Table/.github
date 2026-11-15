@@ -1,23 +1,68 @@
-## Welcome to ESKAI 
-Have you ever looked at the sky and asked yourself, what even is out there?
-Well, with the help of Nasa's Spherex project, and our little app Eskai, you can actually see the sky up close.
-Not only that, but you can even make your own discoveries, and show them to the world!
+<div align="center">
 
-How does Eskai work?
-- First: you can enter any coordinates in the sky that you wish or you can select a patch of the sky in the interactive map or even more, select one of the few already located objects.
-- Second: click on view SphereX data, and wait for the app to retrieve your selection from the SphereX database.
-- Third: watch how your selected region of our sky has changed over time and filter by different molecule wavelengths, or even see an image comparing the changes in the image between every epoch.
-- Fourth: if you find something appearing from out of nowhere, or disappearing or moving or just a bit out of the ordinary. You can post your findings, and even send your url to a friend so they can check it out too!
+<img src="https://raw.githubusercontent.com/IBN-n-Drop-Table/.github/main/assets/eskai_2tintas.png" alt="Eskai logo" width="140">
 
+# Eskai: look up.
 
+**Watch the infrared sky change, with real NASA SPHEREx data.**
 
-<!--
+[**Open the app at eskai.earth**](https://eskai.earth)
 
-**Here are some ideas to get you started:**
+*Our project for the NASA Space Apps Challenge 2026, "Planet X and SPHEREx"*
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+</div>
+
+---
+
+In 1930, Clyde Tombaugh found Pluto by flicking between two photographic plates and spotting the one dot that moved. Today, NASA's **SPHEREx** maps the whole sky every six months in **102 infrared bands**. No one can search all of it alone.
+
+**Eskai puts Tombaugh's method in anyone's hands**, with real 2026 data, and is always clear about what that data can and cannot show.
+
+## What you can do
+
+| | |
+|---|---|
+| **Pick a spot** | Type RA/Dec, move the all-sky map, or tap one of the five challenge objects. Or point at the sky and ask what is above you right now. |
+| **Blink the visits** | One SPHEREx image per visit, same contrast in every frame, with play, step and speed controls. |
+| **Subtract them** | The difference layer shows what changed between visits: red is brighter later, blue is brighter earlier. Rings mark where a known mover should be. |
+| **See the chemistry** | H₂O, CO₂ and CO filters, plus a 102-channel spectrum. In Epsilon Indi B, the methane signature shows. |
+| **Eye vs infrared** | Drag a bar to compare visible light (DSS2) with infrared (AllWISE). |
+| **Find what moves** | A game: two real visits flicker and you click what moved. Scored on the server against Gaia DR3 motion. |
+| **Report a sighting** | Flag a candidate, let others confirm it, and share it with a card. Every view is also a link. |
+
+<sub>The "video" is 3 or 4 real visits over about a year (SPHEREx returns to a spot every 5 to 7 months), not a continuous film.</sub>
+
+## Honest by design
+
+Nothing is simulated, and nothing is called a discovery. You make sightings, software proposes candidates, people verify.
+
+- Barnard's Star moves **10.3″** between the first and last visit. Gaia predicts **10.2″**. You can see it move.
+- Saturated stars are shown but never measured. When there is no valid spectrum, the app says so instead of inventing one.
+- If the archive is slow, you get cached data with a banner saying so, never a blank screen.
+
+## The science notebooks
+
+Striking images are easy. Trustworthy ones are not. [`spherex-science-notebooks`](https://github.com/IBN-n-Drop-Table/spherex-science-notebooks) is our reproducible audit of the difference imaging.
+
+- **Five-target atlas:** the final subtraction for every challenge object, side by side.
+- **Input next to output:** each first-visit image sits beside its difference product, so you can check that a signal is a real change and not an alignment or calibration artefact.
+- **Strict colour code:** red brighter later, blue fainter later, black for masked pixels, so invalid regions can't pass as detections.
+- **Fully offline:** the notebooks read the same files the production API serves. No database, no uploads, no network.
+
+## The five objects
+
+Barnard's Star, Epsilon Indi B, WISE 0855, RW Aurigae and R Draconis. All are precomputed and open instantly, each with a note on what can and can't be claimed. Anywhere else in the sky is processed live in about a minute.
+
+## Repositories
+
+| Repo | What it is |
+|---|---|
+| [**spherex-web**](https://github.com/IBN-n-Drop-Table/spherex-web) | The Eskai app: React, TypeScript, Vite and Aladin Lite. Desktop and phone. |
+| [**spherex-api**](https://github.com/IBN-n-Drop-Table/spherex-api) | The backend: a FastAPI pipeline that turns SPHEREx cutouts from IRSA into visit images, differences, spectra and the game. |
+| [**spherex-science-notebooks**](https://github.com/IBN-n-Drop-Table/spherex-science-notebooks) | Jupyter notebooks that audit the difference imaging for all five targets. |
+
+## Credits
+
+Data from **SPHEREx** (NASA/JPL/Caltech) via **NASA/IPAC IRSA**, plus WISE, Gaia DR3 (ESA), DSS2 and SIMBAD (CDS). Sky viewer: Aladin Lite. Full credits and acknowledgement are in the app.
+
+<sub>Eskai is an independent project by **IBÑ'); Drop Table \*;** and is not endorsed by NASA. Inspired by blink-comparison astronomy and citizen-science projects such as Backyard Worlds. All repositories are MIT licensed.</sub>
