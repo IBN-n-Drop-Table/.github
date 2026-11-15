@@ -26,9 +26,11 @@ In 1930, Clyde Tombaugh found Pluto by flicking between two photographic plates 
 
 <div align="center">
 
-<a href="https://youtu.be/8nY9VFGeb5M"><img src="https://img.youtube.com/vi/8nY9VFGeb5M/maxresdefault.jpg" alt="Thumbnail of the YouTube clip showing Eskai's standout features. Click to watch." width="600"></a>
+<video src="https://raw.githubusercontent.com/IBN-n-Drop-Table/.github/main/video/Eskai_Presentation.mp4" controls muted width="700">
+  Your browser cannot play this video.
+</video>
 
-<sub>Click the image to watch Eskai's most striking features in action on YouTube.</sub>
+<sub>Eskai's most striking features in action. [Watch it on YouTube](https://youtu.be/8nY9VFGeb5M) if it does not play here.</sub>
 
 </div>
 
