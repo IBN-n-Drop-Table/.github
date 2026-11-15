@@ -10,6 +10,10 @@
 
 *Our project for the NASA Space Apps Challenge 2026, "Planet X and SPHEREx"*
 
+<img src="https://raw.githubusercontent.com/IBN-n-Drop-Table/.github/main/screenshots/landing_01.png" alt="Slider comparing visible light (DSS2) on the left with infrared (WISE) on the right, near the Orion Nebula" width="800">
+
+<sub>The same patch of sky near the Orion Nebula: visible light (DSS2) and infrared (WISE).</sub>
+
 </div>
 
 ---
@@ -29,6 +33,14 @@ In 1930, Clyde Tombaugh found Pluto by flicking between two photographic plates 
 | **Eye vs infrared** | Drag a bar to compare visible light (DSS2) with infrared (AllWISE). |
 | **Find what moves** | A game: two real visits flicker and you click what moved. Scored on the server against Gaia DR3 motion. |
 | **Report a sighting** | Flag a candidate, let others confirm it, and share it with a card. Every view is also a link. |
+
+<table>
+<tr>
+<td align="center" width="33%"><img src="https://raw.githubusercontent.com/IBN-n-Drop-Table/.github/main/assets/spherex_data.webp" alt="Difference layer between two SPHEREx visits of RW Aurigae, with the blink player, a spectrum and a warning that the signal is weak" width="260"><br><sub>RW Aurigae, difference between two SPHEREx visits. The app warns the signal is weak and the core saturated.</sub></td>
+<td align="center" width="33%"><img src="https://raw.githubusercontent.com/IBN-n-Drop-Table/.github/main/screenshots/game_result.png" alt="The Find what moves game after a correct answer on Barnard's Star, with rings for where the star was and where it is" width="260"><br><sub>"Find what moves": two SPHEREx visits of Barnard's Star, with rings for where it was and is.</sub></td>
+<td align="center" width="33%"><img src="https://raw.githubusercontent.com/IBN-n-Drop-Table/.github/main/assets/sky_map.webp" alt="All-sky infrared map centred on a nebula, with a small overview map and a button to see SPHEREx data for the spot" width="260"><br><sub>The infrared sky map (WISE) where you pick a spot.</sub></td>
+</tr>
+</table>
 
 <sub>The "video" is 3 or 4 real visits over about a year (SPHEREx returns to a spot every 5 to 7 months), not a continuous film.</sub>
 
